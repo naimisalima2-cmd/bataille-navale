@@ -1,4 +1,8 @@
 from grille import Grille
-def test_init():
-    g=Grille(3,4)
-    g.afficher()
+g = Grille(5, 8)
+print("Grille initiale :")
+g.afficher()
+print("\nAprès le tir à la case (2,3) :")
+g.tirer(2, 3)
+g.afficher()
+
