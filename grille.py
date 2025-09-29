@@ -12,7 +12,12 @@ class Grille:
             for j in range(self.nombre_colonnes):
                 index=i*self.nombre_colonnes+j
                 print(self.matrice[index],end='')
-    
+    def tirer(self, ligne, colonne):
+        if 0 <= ligne < self.nombre_lignes and 0 <= colonne < self.nombre_colonnes:
+            self.matrice[ligne][colonne] = self.touche
+        else:
+            print("Coordonnées invalides.")
+
             
 
 
