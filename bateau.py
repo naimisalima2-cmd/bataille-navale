@@ -7,4 +7,11 @@ class Bateau:
     def __repr__(self):
         orientation = "Vertical" if self.vertical else "Horizontal"
         return (f"Bateau(ligne={self.ligne}, colonne={self.colonne}, "f"longueur={self.longueur}, orientation={orientation})")
-    
+    def positions(self):
+        pos = []
+        for i in range(self.longueur):
+            if self.vertical:
+                pos.append((self.ligne + i, self.colonne)) 
+            else:
+                pos.append((self.ligne, self.colonne + i))  
+        return pos
