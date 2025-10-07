@@ -14,12 +14,19 @@ class Grille:
                 index=i*self.nombre_colonnes+j
                 print(self.matrice[index],end='')
             print()
-    def tirer(self, ligne, colonne):
+
+    def tirer(self, ligne, colonne, touche='x'):
         if 0 <= ligne < self.nombre_lignes and 0 <= colonne < self.nombre_colonnes:
             index = ligne * self.nombre_colonnes + colonne
-            self.matrice[index] = self.touche
+            if self.matrice[index] == '⛵':
+                self.matrice[index] = touche
+                print("Touché !")
+            else:
+                self.matrice[index] = touche
+                print("Plouf, dans l’eau...")
         else:
             print("Coordonnées invalides.")
+
     def ajoute(self, bateau: Bateau):
         for (ligne, col) in bateau.positions:
             if ligne >= self.nombre_lignes or col >= self.nombre_colonnes:
