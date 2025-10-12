@@ -4,6 +4,7 @@ class Bateau:
         self.colonne = colonne
         self.longueur = longueur
         self.vertical = vertical
+        self.marque = "⛵"
     def __repr__(self):
         orientation = "Vertical" if self.vertical else "Horizontal"
         return (f"Bateau(ligne={self.ligne}, colonne={self.colonne}, "f"longueur={self.longueur}, orientation={orientation})")
@@ -23,3 +24,26 @@ class Bateau:
             if grille.matrice[index] != 'x':
                 return False
         return True
+    
+class PorteAvion(Bateau):
+    def __init__(self, ligne, colonne, vertical=False):
+        super().__init__(ligne, colonne, longueur=4, vertical=vertical)
+        self.marque = "🚢"
+
+
+class Croiseur(Bateau):
+    def __init__(self, ligne, colonne, vertical=False):
+        super().__init__(ligne, colonne, longueur=3, vertical=vertical)
+        self.marque = "⛴"
+
+
+class Torpilleur(Bateau):
+    def __init__(self, ligne, colonne, vertical=False):
+        super().__init__(ligne, colonne, longueur=2, vertical=vertical)
+        self.marque = "🚣"
+
+
+class SousMarin(Bateau):
+    def __init__(self, ligne, colonne, vertical=False):
+        super().__init__(ligne, colonne, longueur=2, vertical=vertical)
+        self.marque = "🐟"

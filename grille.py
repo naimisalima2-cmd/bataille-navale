@@ -33,6 +33,6 @@ class Grille:
                 return "Grille inchangée"  
         for (ligne, col) in bateau.positions:
             index = ligne * self.nombre_colonnes + col
-            self.matrice[index] = '⛵'
+            self.matrice[index] = bateau.marque
         return "Bateau placé avec succès"
 

@@ -18,3 +18,15 @@ print("Avant tirs :", b3.coule(g))
 for l, c in b3.positions:
     g.tirer(l, c)
 print("Après tirs :", b3.coule(g)) 
+
+from grille import Grille
+from bateau import PorteAvion, Croiseur, Torpilleur, SousMarin
+
+g = Grille(5, 8)
+
+print("\n--- Test des types de bateaux ---")
+print(g.ajoute(PorteAvion(0, 0)))
+print(g.ajoute(Croiseur(1, 0)))
+print(g.ajoute(Torpilleur(2, 0)))
+print(g.ajoute(SousMarin(3, 0)))
+g.afficher()
