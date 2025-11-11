@@ -35,19 +35,23 @@ Le jeu se termine lorsque **tous les bateaux sont coulés**.
 
 ---
 
+
 ## 4. Structure du projet
 
+```
 bataille-navale/
-│── main.py # la partie principale du jeu
-│── grille.py # gestion de la grille et des tirs
-│── bateau.py # définition des bateaux
-│── test_grille.py # tests unitaires
-│── test_bateau.py # tests unitaires
-│── story_bateau.py # user story : chevauchement
-│── story_grille.py # user story : tirs (plouf)
+│── main.py            # la partie principale du jeu
+│── grille.py          # gestion de la grille et des tirs
+│── bateau.py          # définition des bateaux
+│── test_grille.py     # tests unitaires
+│── test_bateau.py     # tests unitaires
+│── story_bateau.py    # user story : chevauchement
+│── story_grille.py    # user story : tirs (plouf)
 │── README.md
+```
 
 ---
+
 
 ## 5. Exécution du jeu
 
