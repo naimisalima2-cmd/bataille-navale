@@ -2,12 +2,32 @@
 .venv/
 venv/
 
-# Fichiers python compilés
+# Fichiers Python compilés
 __pycache__/
 *.pyc
-<<<<<<< HEAD
+*.pyo
+*.pyd
 
 # Fichiers temporaires
 *.tmp
-=======
->>>>>>> feature/bateau
+*.log
+
+# VS Code
+.vscode/
+
+# Sauvegardes
+*.bak
+*.old
+
+# Caches
+.cache/
+.pytest_cache/
+
+# Build / dist
+dist/
+build/
+*.egg-info/
+
+# Fichiers Windows
+Thumbs.db
+desktop.ini
