@@ -5,6 +5,9 @@ venv/
 # Fichiers python compilés
 __pycache__/
 *.pyc
+<<<<<<< HEAD
 
 # Fichiers temporaires
 *.tmp
+=======
+>>>>>>> feature/bateau

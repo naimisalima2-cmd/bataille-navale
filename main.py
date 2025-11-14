@@ -13,7 +13,7 @@ CYAN = "\033[96m"
 RESET = "\033[0m"
 
 
-SYMBOLS_BATEAU = {"🚢", "⛴", "🚣", "🐟", "⛵"}
+SYMBOLS_BATEAU = {"🚢", "⛴", "🚣", "🐟"}
 
 def clear():
     os.system("cls" if os.name == "nt" else "clear")
